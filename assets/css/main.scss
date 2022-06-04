@@ -1,0 +1,232 @@
+$main_color: #a0bed8;
+$secondary_color: #5a5a5a;
+header {
+    position: relative;
+    height: 40em;
+    background-image: url('../images/hero.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    #particles-js {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.3;
+    }
+    .text-box {
+        padding: 15% 0;
+    }
+    .text-description {
+        h6 {
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            font-size: 26px;
+            font-weight: 300;
+        }
+        h1 {
+            padding: 1.5rem 0;
+            font-family: 'Great Vibes', cursive;
+            font-size: 60px;
+            color: white;
+            border-top: medium solid #fff;
+            border-bottom: medium solid #fff;
+        }
+    }
+}
+
+.couple {
+    background-image: url('../images/bg-flower.png');
+    background-size: cover;
+    background-position: 0 -10em;
+    background-repeat: no-repeat;
+    padding: 6rem 0px;
+    position: relative;
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        opacity: 0.83;
+    }
+    h2 {
+        position: relative;
+        font-size: 50px;
+        font-family: 'Great Vibes', cursive;
+        color: $main_color;
+    }
+    h4 {
+        font-family: 'Great Vibes', cursive;
+        color: $secondary_color;
+    }
+    p {
+        font-family: 'Montserrat', sans-serif;
+        color: $secondary_color;
+    }
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: $main_color;
+    }
+}
+
+.waktu {
+    padding: 5rem 0;
+    background-color: $main_color;
+    color: #fff;
+    p {
+        font-size: 46px;
+        font-family: 'Great Vibes', cursive;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        #hari,
+        #jam,
+        #menit,
+        #detik {
+            display: inline-block;
+            margin: 0 30px;
+        }
+    }
+}
+
+.map {
+    padding: 6rem 0;
+    h2 {
+        font-size: 50px;
+        font-family: 'Great Vibes', cursive;
+        color: $main_color;
+    }
+    h3 {
+        font-size: 30px;
+        font-family: 'Great Vibes', cursive;
+        color: $secondary_color;
+    }
+    h6 {
+        color: $secondary_color;
+    }
+    p {
+        color: $secondary_color;
+        font-weight: 300;
+    }
+}
+
+.ayat {
+    padding: 6rem 0;
+    background-image: url('../images/bg-rings.jpg');
+    background-size: cover;
+    background-position: 0 -1em;
+    background-attachment: fixed;
+    position: relative;
+    .bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        opacity: 0.2;
+    }
+    .arab {
+        position: relative;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+    }
+    .arti,
+    p {
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        margin-top: 2em;
+    }
+    p {
+        font-weight: bold;
+    }
+}
+
+.prokes {
+    padding: 6rem 0;
+    h2 {
+        font-size: 50px;
+        font-family: 'Great Vibes', cursive;
+        color: $main_color;
+    }
+    img {
+        margin-bottom: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        color: $secondary_color;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: $main_color;
+    color: #fff;
+    h1 {
+        font-family: 'Great Vibes', cursive;
+        font-size: 60px;
+    }
+    a {
+        color: #fff;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    header {
+        .text-description {
+            h6 {
+                font-size: 32px;
+            }
+            h1 {
+                font-size: 70px;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    header {
+        .text-description {
+            h6 {
+                font-size: 26px;
+            }
+            h1 {
+                font-size: 80px;
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    header {
+        .text-description {
+            h6 {
+                font-size: 28px;
+            }
+            h1 {
+                font-size: 82px;
+            }
+        }
+    }
+}
