@@ -65,7 +65,7 @@ ul.navbar-bawah li a {
 
 header {
   position: relative;
-  height: 50em;
+  height: 100vh;
   background-image: url("../images/hero.png");
   background-attachment: fixed;
   background-size: cover;
@@ -81,7 +81,7 @@ header #particles-js {
   background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 20%;
+  opacity: 40%;
 }
 
 header .nama {
@@ -116,16 +116,15 @@ header .nama .pengantin1 h1 {
   color: #fff;
 }
 
-.couple {
+/* .couple {
   background-image: url("../images/bg-flower1.png");
   background-size: cover;
-  /* background-position: 0 -10em; */
   background-repeat: no-repeat;
   padding: 6rem 0px;
   position: relative;
-}
+} */
 
-.couple .bg {
+/* .couple .bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -133,6 +132,41 @@ header .nama .pengantin1 h1 {
   bottom: 0;
   background-color: #fff;
   opacity: 20%;
+} */
+
+.couple .bunga-atas,
+.couple .bunga-bawah {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.couple .bunga-bawah {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}
+
+.couple .bunga-atas img.bunga-kiri,
+.couple .bunga-bawah img.bunga-kiri {
+  max-width: calc(25% - 1rem);
+}
+
+.couple .bunga-atas img.bunga-kanan,
+.couple .bunga-bawah img.bunga-kanan {
+  max-width: calc(25% - 1rem);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.couple .container {
+  margin-top: -10rem;
+  margin-bottom: 3rem;
 }
 
 .couple h2 {
@@ -150,33 +184,46 @@ header .nama .pengantin1 h1 {
   background-color: #7f8487;
 }
 
-.couple .mempelai h3 {
-  text-align: center;
-  font-family: "Birthstone Bounce", cursive;
-  color: #7f8487;
-  font-weight: bold;
+.couple .mempelai {
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.couple .mempelai p {
-  text-align: center;
-  font-family: "Noto Serif", serif;
-  color: #7f8487;
+.couple .mempelai .pria {
+  margin-right: -5rem;
+}
+
+.couple .mempelai .wanita {
+  margin-left: -5rem;
+}
+
+.couple .mempelai .pria .card {
+  margin-right: 5rem;
+}
+
+.couple .mempelai .wanita .card {
+  margin-left: 5rem;
 }
 
 .couple .mempelai .pria .card,
 .couple .mempelai .wanita .card {
-  margin: auto auto 2rem auto;
   background-color: transparent;
   border: 0;
+  margin: auto;
   max-width: 10rem;
   width: 10rem;
   height: 10rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 9999px;
   -webkit-border-radius: 9999px;
   -moz-border-radius: 9999px;
   -ms-border-radius: 9999px;
   -o-border-radius: 9999px;
+}
+
+.couple .mempelai .pria .card .card-body,
+.couple .mempelai .wanita .card .card-body {
+  padding: 2rem 0;
 }
 
 .couple .mempelai .pria .card img,
@@ -190,6 +237,19 @@ header .nama .pengantin1 h1 {
   -moz-border-radius: 9999px;
   -ms-border-radius: 9999px;
   -o-border-radius: 9999px;
+}
+
+.couple .mempelai .card .card-body h3 {
+  text-align: center;
+  font-family: "Birthstone Bounce", cursive;
+  color: #7f8487;
+  font-weight: bold;
+}
+
+.couple .mempelai .card .card-body p {
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  color: #7f8487;
 }
 
 .waktu {
@@ -414,12 +474,121 @@ footer a {
   color: #fff;
 } */
 
-@media (min-width: 768px) {
-  header .text-description h6 {
-    font-size: 32px;
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .tombol-musik {
+    right: 45px;
   }
-  header .text-description h1 {
-    font-size: 70px;
+  header .nama {
+    margin-top: 33vh;
+  }
+  .couple .container {
+    margin-top: -5rem;
+  }
+  .waktu p {
+    font-size: 35px;
+  }
+  .ayat .arab {
+    font-size: 20px;
+  }
+  .ayat .arti,
+  .ayat p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .tombol-musik {
+    bottom: 95px;
+    right: 20px;
+  }
+  header {
+    background-image: url(../images/herom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  header .nama {
+    margin-top: 33vh;
+  }
+  header .nama h6 {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  header .nama .pengantin1 h1 {
+    padding: 0;
+    font-size: 4rem;
+  }
+  .couple {
+    height: 100vh;
+  }
+  .couple .bunga-atas img.bunga-kiri,
+  .couple .bunga-bawah img.bunga-kiri,
+  .couple .bunga-atas img.bunga-kanan,
+  .couple .bunga-bawah img.bunga-kanan {
+    max-width: calc(40% - 1rem);
+  }
+  /* ! Mempelai */
+  .couple {
+    height: auto;
+  }
+  .couple h2 {
+    font-size: 2rem;
+  }
+  .couple hr {
+    margin-bottom: 4rem;
+    width: 90%;
+  }
+  .couple .container {
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+  }
+  .couple .mempelai .pria {
+    margin-right: 0rem;
+  }
+  .couple .mempelai .wanita {
+    margin-top: 12rem;
+    margin-left: 0rem;
+  }
+  .couple .mempelai .pria .card,
+  .couple .mempelai .wanita .card {
+    margin: auto;
+  }
+  /* ! End Mempelai */
+  .waktu {
+    padding: 2rem 0;
+  }
+  .waktu p {
+    font-size: 2rem;
+  }
+  .lokasi h2.tl {
+    margin-top: 3rem;
+  }
+  .ayat {
+    margin-top: 3rem;
+  }
+  .ayat .arab {
+    font-size: 15px;
+  }
+  .ayat .arti,
+  .ayat p {
+    font-size: 10px;
+  }
+  .gallery .isi-gallery {
+    grid-template-areas:
+      "g1 g2"
+      "g1 g3"
+      "g4 g4"
+      "g5 g5";
+  }
+  .gallery .bunga-atas img.bunga-kiri,
+  .gallery .bunga-atas img.bunga-kanan {
+    max-width: calc(40% - 1rem);
+  }
+  .gallery h2.tl {
+    margin-top: -3rem;
+  }
+  .gallery hr {
+    margin: 1rem auto;
+    width: 80%;
   }
 }
 

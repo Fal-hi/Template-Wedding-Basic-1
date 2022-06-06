@@ -1,3 +1,22 @@
+// Musik
+const track = document.getElementById("track");
+const button = document.getElementById("play-pause");
+
+function playPause() {
+  if (track.paused) {
+    track.play();
+    button.className = "bi-pause-fill";
+  } else {
+    track.pause();
+    button.className = "bi-play-fill";
+  }
+}
+// Button Music
+button.addEventListener("click", playPause);
+track.addEventListener("ended", function () {
+  button.className = "bi-play-fill";
+});
+
 // Countdown
 // Atur waktu akhir
 let countDownDate = new Date("Maret 31, 2022 08:00:00").getTime();
@@ -63,33 +82,13 @@ window.addEventListener("scroll", function () {
     }
   });
 
-  const prokesContainerRow = document.querySelectorAll(
-    ".prokes .container .row"
-  );
-  prokesContainerRow.forEach((el) => {
-    if (wScroll > 2200) {
+  const gallery = document.querySelectorAll(".gallery .container");
+  gallery.forEach((el) => {
+    if (wScroll > 2000) {
       el.classList.add("animate__animated", "animate__fadeInUp");
     }
   });
 });
 
-// Musik
-const track = document.getElementById("track");
-const button = document.getElementById("play-pause");
-
-function playPause() {
-  if (track.paused) {
-    track.play();
-    button.className = "bi-pause-fill";
-  } else {
-    track.pause();
-    button.className = "bi-play-fill";
-  }
-}
-// Button Music
-button.addEventListener("click", playPause);
-track.addEventListener("ended", function () {
-  button.className = "bi-play-fill";
-});
 // Gallery glightbox
 const lightbox = GLightbox({ closeOnOutsideClick: false, loop: true });
