@@ -17,6 +17,43 @@ track.addEventListener("ended", function () {
   button.className = "bi-play-fill";
 });
 
+// Initialize and add the map
+function initMap() {
+  // The location
+  const akadNikah = { lat: -0.9225054940582557, lng: 100.35991095174292 };
+  const resepsi1 = { lat: -0.9225054940582557, lng: 100.35991095174292 };
+  const resepsi2 = { lat: -0.9225054940582557, lng: 100.35991095174292 };
+  // The map, centered the location
+  const map1 = new google.maps.Map(document.getElementById("akadNikah"), {
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: akadNikah,
+  });
+  const map2 = new google.maps.Map(document.getElementById("resepsi1"), {
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: resepsi1,
+  });
+  const map3 = new google.maps.Map(document.getElementById("resepsi2"), {
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: resepsi2,
+  });
+  // The marker, positioned the location
+  const markerAkadNikah = new google.maps.Marker({
+    position: akadNikah,
+    map: map1,
+  });
+  const markerResepsi = new google.maps.Marker({
+    position: resepsi1,
+    map: map2,
+  });
+  const markerUnduhMantu = new google.maps.Marker({
+    position: resepsi2,
+    map: map3,
+  });
+}
+
 // Countdown
 // Atur waktu akhir
 let countDownDate = new Date("Maret 31, 2022 08:00:00").getTime();
@@ -91,4 +128,7 @@ window.addEventListener("scroll", function () {
 });
 
 // Gallery glightbox
-const lightbox = GLightbox({ closeOnOutsideClick: false, loop: true });
+const lightbox = GLightbox({
+  closeOnOutsideClick: false,
+  loop: true,
+});

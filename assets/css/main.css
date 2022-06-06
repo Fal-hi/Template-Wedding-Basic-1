@@ -254,7 +254,7 @@ header .nama .pengantin1 h1 {
 
 .waktu {
   padding: 5rem 0;
-  background-color: #50673f;
+  background-color: #7f8487;
   color: #fff;
 }
 
@@ -282,7 +282,7 @@ header .nama .pengantin1 h1 {
 
 .lokasi h2.tl {
   margin-top: 5rem;
-  color: #7f8487;
+  color: var(--warna1);
   text-align: center;
   font-family: "Birthstone Bounce", cursive;
   font-weight: bold;
@@ -290,28 +290,49 @@ header .nama .pengantin1 h1 {
 
 .lokasi hr {
   margin: 1rem auto 2rem auto;
-  width: 25%;
+  width: 50%;
   height: 3px;
-  background-color: #7f8487;
+  background-color: var(--warna1);
 }
 
-.lokasi .akad-nikah {
-  text-align: center;
-  color: #7f8487;
-}
-
-.lokasi .akad-nikah h3.tlok {
-  margin-top: 2rem;
+.lokasi h3 {
+  color: var(--warna1);
   font-family: "Birthstone Bounce", cursive;
+  text-align: center;
   font-weight: bold;
 }
 
-.lokasi .akad-nikah h5 {
+.lokasi .jdt {
   font-family: "Noto Serif", serif;
 }
 
-.lokasi .akad-nikah h6 {
-  font-family: "Noto Serif", serif;
+.lokasi .google-map {
+  margin: 0.5rem auto;
+  height: 400px;
+  width: 100%;
+  border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
+}
+
+.lokasi .akad-nikah,
+.lokasi .resepsi1,
+.lokasi .resepsi2 {
+  text-align: center;
+}
+
+.lokasi .resepsi1 {
+  margin: 3rem auto;
+}
+
+.lokasi .akad-nikah .jdt,
+.lokasi .resepsi1 .jdt,
+.lokasi .resepsi2 .jdt {
+  margin: 1rem auto 2rem auto;
+  font-weight: bold;
+  color: var(--warna1);
 }
 
 .ayat {
@@ -477,6 +498,10 @@ footer a {
 @media (min-width: 768px) and (max-width: 991.98px) {
   .tombol-musik {
     right: 45px;
+  }
+  header {
+    background-position: center;
+    background-repeat: no-repeat;
   }
   header .nama {
     margin-top: 33vh;
