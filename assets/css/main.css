@@ -116,24 +116,6 @@ header .nama .pengantin1 h1 {
   color: #fff;
 }
 
-/* .couple {
-  background-image: url("../images/bg-flower1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 6rem 0px;
-  position: relative;
-} */
-
-/* .couple .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-  opacity: 20%;
-} */
-
 .couple .bunga-atas,
 .couple .bunga-bawah {
   display: flex;
@@ -282,7 +264,7 @@ header .nama .pengantin1 h1 {
 
 .lokasi h2.tl {
   margin-top: 5rem;
-  color: var(--warna1);
+  color: #7f8487;
   text-align: center;
   font-family: "Birthstone Bounce", cursive;
   font-weight: bold;
@@ -292,11 +274,11 @@ header .nama .pengantin1 h1 {
   margin: 1rem auto 2rem auto;
   width: 50%;
   height: 3px;
-  background-color: var(--warna1);
+  background-color: #7f8487;
 }
 
 .lokasi h3 {
-  color: var(--warna1);
+  color: #7f8487;
   font-family: "Birthstone Bounce", cursive;
   text-align: center;
   font-weight: bold;
@@ -310,11 +292,6 @@ header .nama .pengantin1 h1 {
   margin: 0.5rem auto;
   height: 400px;
   width: 100%;
-  border-radius: var(--lengkung);
-  -webkit-border-radius: var(--lengkung);
-  -moz-border-radius: var(--lengkung);
-  -ms-border-radius: var(--lengkung);
-  -o-border-radius: var(--lengkung);
 }
 
 .lokasi .akad-nikah,
@@ -332,7 +309,7 @@ header .nama .pengantin1 h1 {
 .lokasi .resepsi2 .jdt {
   margin: 1rem auto 2rem auto;
   font-weight: bold;
-  color: var(--warna1);
+  color: #7f8487;
 }
 
 .ayat {
@@ -457,44 +434,6 @@ header .nama .pengantin1 h1 {
   grid-area: g5;
 }
 
-/* .prokes {
-  padding: 6rem 0;
-}
-
-.prokes h2 {
-  font-size: 50px;
-  font-family: "Great Vibes", cursive;
-  color: #50673f;
-}
-
-.prokes img {
-  margin-bottom: 20px;
-  width: 200px;
-  height: 200px;
-}
-
-.prokes p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  color: #5a5a5a;
-}
-
-footer {
-  text-align: center;
-  padding: 7rem 0;
-  background-color: #50673f;
-  color: #fff;
-}
-
-footer h1 {
-  font-family: "Great Vibes", cursive;
-  font-size: 60px;
-}
-
-footer a {
-  color: #fff;
-} */
-
 @media (min-width: 768px) and (max-width: 991.98px) {
   .tombol-musik {
     right: 45px;
@@ -527,7 +466,7 @@ footer a {
     right: 20px;
   }
   header {
-    background-image: url(../images/herom.png);
+    background-image: url("../images/herom.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -551,7 +490,6 @@ footer a {
   .couple .bunga-bawah img.bunga-kanan {
     max-width: calc(40% - 1rem);
   }
-  /* ! Mempelai */
   .couple {
     height: auto;
   }
@@ -563,21 +501,20 @@ footer a {
     width: 90%;
   }
   .couple .container {
-    margin-top: 0rem;
+    margin-top: 0;
     margin-bottom: 3rem;
   }
   .couple .mempelai .pria {
-    margin-right: 0rem;
+    margin-right: 0;
   }
   .couple .mempelai .wanita {
     margin-top: 12rem;
-    margin-left: 0rem;
+    margin-left: 0;
   }
   .couple .mempelai .pria .card,
   .couple .mempelai .wanita .card {
     margin: auto;
   }
-  /* ! End Mempelai */
   .waktu {
     padding: 2rem 0;
   }
@@ -614,24 +551,6 @@ footer a {
   .gallery hr {
     margin: 1rem auto;
     width: 80%;
-  }
-}
-
-@media (min-width: 992px) {
-  header .text-description h6 {
-    font-size: 26px;
-  }
-  header .text-description h1 {
-    font-size: 80px;
-  }
-}
-
-@media (min-width: 1200px) {
-  header .text-description h6 {
-    font-size: 28px;
-  }
-  header .text-description h1 {
-    font-size: 82px;
   }
 }
 
